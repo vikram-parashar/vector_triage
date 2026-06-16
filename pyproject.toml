@@ -1,0 +1,24 @@
+[project]
+name = "vector-triage"
+version = "0.1.0"
+description = "Vector-based ticket triage"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.137.1",
+  "pandas>=3.0.3",
+  "pendulum>=3.2.0",
+  "psycopg2-binary>=2.9.12",
+  "python-dotenv>=1.2.2",
+  "sentence-transformers>=5.5.1",
+  "torch>=2.12.0",
+  "uvicorn[standard]>=0.49.0",
+]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
