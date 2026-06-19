@@ -15,3 +15,5 @@ SELECT extname FROM pg_extension;
 
 - checking tables
 \d tickets
+
+-- there are tweets with response_tweet_id x but no tweet with tweet_id x, inserted in tweet_edges, nonetheless, for u->v, make sure u and v exist

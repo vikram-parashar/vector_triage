@@ -12,3 +12,7 @@ wheels/
 .env
 
 data/*
+
+infra/terraform.tfstate
+infra/.terraform/
+infra/.terraform.lock.hcl
